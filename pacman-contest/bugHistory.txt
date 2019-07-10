@@ -1,0 +1,21 @@
+Attacker Strategies:
+1. predict the position of enemies even out of visual range for strategy determination
+2. find path to the closest food
+
+bugHistory:
+1. no path found when distance to enemy is less than 1 because all neighbour positions are within
+    enemy's coverage (square that is left, right, up, down 1 distance away from our pacman)
+2. go back and forth near the side border when enemy is near (go back home when entering enemy side
+    and go enemy side while in home side)
+3. need to relocate food when we are eaten
+
+
+Strategies to add:
+1. go back home when holding more than 5 food
+2. may be too timid in attacking with no food carried
+    solution: escape only when distance to enemy is less than 3 with no food carried
+3. ignore scared enemy
+
+bug solutions:
+1. set enemy coverage to be the position that the enemy is in instead of the square
+2.
